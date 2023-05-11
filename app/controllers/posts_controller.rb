@@ -4,12 +4,12 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def show
+  #def show
   #   # find a Company
-  @company = Company.find_by({"id" => params["id"]})
-  @contacts = Contact.where({"company_id" => @company["id"]})
+  #@company = Company.find_by({"id" => params["id"]})
+  #@contacts = Contact.where({"company_id" => @company["id"]})
   #   # render companies/show view with details about Company
-  end
+  #end
 
   def new
 @post = Post.new  
