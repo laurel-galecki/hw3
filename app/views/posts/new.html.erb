@@ -6,14 +6,17 @@
     <%= form.text_field "title" %>
   </p>
   <p>
-    <%= form.label "entry" %>
-    <%= form.text_field "entry" %>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
   </p>
   <p>
-    <%= form.label "date" %>
-    <%= form.date_field "date" %>
+    <%= form.label "posted_on" %>
+    <%= form.date_field "posted_on" %>
   </p>
   <p>
+    <%= form.hidden_field "place_id" %>
+</p>
+<p>
     <%= form.submit %>
   </p>
 <% end %>
